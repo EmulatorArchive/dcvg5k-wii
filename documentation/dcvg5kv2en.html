@@ -1,0 +1,180 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+ <title>DCVG5K v2 : VG5000 Radiola emulator</title>
+ <link href="dcvg5kv2.css" rel="stylesheet" type="text/css">
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+ <meta name="description" content="DCVG5K v2 : Radiola VG5000 emulator">
+ <meta name="author" content="Daniel Coulom">
+ <meta name="keywords" content="emulateur, emulator, radiola, philips, vg5000, sdl, gpl">
+</head>
+
+<body>
+<h1>DCVG5K v2 : Radiola-Philips-Shneider VG5000 emulator</h1>
+<p>
+DCVG5K v2 is a VG5000 emulator created by Daniel Coulom (mail to danielcoulom at gmail dot com).<br>
+DCVG5K web site is <a href="http://dcvg5k.free.fr">dcvg5k.free.fr</a>.
+</p>
+<center>
+<img border="0" src="../picture/dcvg5ksmall.png" alt="dcvg5k">&nbsp;&nbsp;<br>
+&nbsp;&nbsp;<img border="0" src="../picture/vg5000small.jpg" alt="vg5000"><br>
+<small>Picture &copy; 2005 - Vincent Coulom</small>
+</center>
+
+<h2>Fonctions</h2>
+<p>
+DCVG5K v2 emulates :
+</p>
+<ul>
+<li><a href="../picture/vg5000.jpg">VG5000</a> central unit powered by <a href="http://fr.wikipedia.org/wiki/Zilog_Z80">Zilog Z80</a> microprocessor.</li>
+<li>System monitor and built-in Basic interpreter.</li>
+<li>Memory expansion cartridge.</li>
+<li>Two joysticks with their controller.</li>
+<li>Tape reader and writer, tapes being emulated with .k7 files.</li>
+<li>Printer unit (with a file).</li>
+</ul>
+<p>
+User interface comes with two languages : English and French.
+</p>
+<br>
+
+<h2>Technical tips</h2>
+<p>
+DCVG5K v2 is a free software.
+<center><img border="0" src="../icon/sdl_powered_small.png" alt="sdl_powered"></center> 
+</p>
+<ul>
+<li>It is distributed under the terms of the GNU GPL <a href="../licence/dcvg5kv2-licence.txt">(more in the official licence)</a></li>
+<li>It is programmed with the <a href="http://en.wikipedia.org/wiki/C_programming_language">C language</a></li>
+<li>It uses <a href="http://www.libsdl.org/">SDL</a> library for audio and video.</li>
+<li>It uses <a href="http://www.libsdl.org/projects/SDL_ttf/">SDL_ttf</a> library with <a href="http://www.bitstream.com/font_rendering/products/dev_fonts/vera.html">Bitstream</a> <a href="http://www.gnome.org/fonts/">Vera</a> font.</li>
+<li>It uses  Marat Fayzullin's Z80 emulator and dasmZ80 disassembler, available at <a href="http://fms.komkon.org/EMUL8/">Computer Emulation Resources</a></li>
+<li>User interface has been designed specially for this project.</li>
+<li>It doesn't use hardware specific or system specific function, to allow easy port.</li>
+<li>It can run with Windows, Linux, Mac-OS and many other systems.</li>
+</ul>
+<br>
+
+<h2>Installation</h2>
+<p>
+DCVG5K v2 should run on every PC with a Pentium II or better processor, with an audio adapter, a decent video adapter, running Windows or Linux 1998 or newer release. It also runs on other platforms. The list of compatible systems will be added here, depending on the users feedback.
+
+<center>
+Tested with : 
+<img border="0" src="../icon/linux.png" alt="linux">
+<img border="0" src="../icon/win32.png" alt="win32">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+To be tested with :
+<img border="0" src="../icon/macos.png" alt="macos">
+<img border="0" src="../icon/macosx.png" alt="macosx">
+<img border="0" src="../icon/amigaos.png" alt="amigaos">
+<img border="0" src="../icon/beos.png" alt="beos">
+<img border="0" src="../icon/freebsd.png" alt="freebsd">
+<img border="0" src="../picture/irix.png" alt="irix">
+<img border="0" src="../icon/netbsd.png" alt="netbsd">
+<img border="0" src="../icon/openbsd.png" alt="openbsd">
+<img border="0" src="../icon/qnx.png" alt="qnx">
+<img border="0" src="../icon/solaris.png" alt="solaris">
+<img border="0" src="../icon/riscos.png" alt="riscos">
+<img border="0" src="../icon/wince.png" alt="wince">
+and more...
+</center>
+
+</p>
+<h3>All platforms</h3>
+<br>
+<ul>
+<li>Create a new folder and name it dcvg5k (or any other name you like).</li>
+<li>Download <a href="http://dcvg5k.free.fr/download/dcvg5kv2.0.zip">dcvg5kv2.0.zip</a> or <a href="http://dcvg5k.free.fr/download/dcvg5kv2.0.tar.gz">dcvg5kv2.0.tar.gz</a> to this folder.</li>
+<li>Unpack the archive, keeping the directory structure.</li>
+<li>Install <a href="http://www.libsdl.org/">SDL</a> and <a href="http://www.libsdl.org/projects/SDL_ttf/">SDL_ttf</a> libraries. Development version is required to compile. Otherwise you just need runtime library.</li>
+<li>Z80 emulator and dasmz80 disassembler licences don't allow source distribution. In order to compile, they have to be downloaded from <a href="http://fms.komkon.org/EMUL8/">Computer Emulation Resources</a> to dcvg5k/Z80 subfolder. In Z80.h file, uncomment #define LSB_FIRST or #define MSB_FIRST instruction according to the microprocessor <a href="http://fr.wikipedia.org/wiki/Endianness">endianness</a>. In dasmz80.c comment out the whole main() function.</li>
+<li>Compile DCVG5K, depending on your operating system (not required with Windows).</li>
+<li>/software subfolder contains VG5000 tape images (.k7 extension). You can add your own files (look also at <a href="http://dcvg5k.free.fr/vgsoft/">dcvg5k collection</a>).</li> 
+</ul>
+<h3><img border="0" src="../icon/win32.png" alt="win32"> Windows</h3>
+<p>
+Dcvg5k.exe executable file comes with dcvg5k. It doesn't need to be compiled. Just double-click the dcmo5.exe filename to run dcvg5k. A shortcut may be added to the Desktop or to the Task Bar. Please note : SDL and SDL_ttf libraries must be installed. SDL.dll and SDL_ttf.dll files may be stored in dcvg5k folder, or in any other folder searched for executable programs, ie c:/windows/system32. 
+</p>
+<h3><img border="0" src="../icon/linux.png" alt="linux"> Linux</h3>
+<p>
+Install SDL and SDL_ttf library, Z80 and dasmZ80 sources as explain in 'All platforms'. Compile dcvg5k with the makefile coming with the distribution. Open a terminal in dcvg5k folder and execute a 'make' command.
+</p>
+<h3><img border="0" src="../icon/macos.png" alt="macos"> Mac-OS</h3>
+<p>
+To be continued...
+</p>
+<br>
+
+<h2>History</h2>
+<br>
+<ul>
+<li><b>2008-02-02 : </b>Version 2.0 released</li>
+</ul>
+<br>
+
+<h2>User Guide</h2>
+<p>
+Start dcvg5k with the suitable command, depending on your operating system. With Windows, for instance, you can double-click dcvg5k.exe filename or use a shortcut.
+</p>
+
+<h3>Emulator commands</h3>
+<p>
+All emulator commands are done through menu bar at the top of the program main window.<br>
+<br><center><img border="0" src="../picture/status.png" alt="statusbar"></center> 
+</p>
+
+<ul>
+<br><li><b>About DCVG5K</b><br>
+Click [?] button on the right of the menu bar.<br>
+<br><center><img border="0" src="../picture/about.png" alt="about"></center>
+</li>
+
+<br><li><b>Settings</b><br>
+Click [Options] button on the right of the menu bar, and select Settings...<br> 
+The buttons on the right of each parameter can be used to change the value.<br>
+[Restore default values] button initializes all the values.<br>
+<br><center><img border="0" src="../picture/settings.png" alt="settings"></center>
+</li>
+
+<br><li><b>Keyboard layout</b><br>
+Click [Options] button on the right of the menu bar, and select Keyboard...<br> 
+Key codes depend on operating system and keyboard type.
+It is not possible recognize every configuration. Default in dcvg5k is a standard French keyboard with Windows XP or Linux. For other configurations the keyboard layout must be redefined. It is a straightforward process : each VG5000 key is emulated with one key of the actual keyboard. Type a key on the keyboard. Matching VG5000 key is shown. If not correct, click the corresponding VG5000 key picture. Repeat this process for all VG5000 keys. Then you should save the customized keyboard layout, and it will be used each time you will run DCVG5K.<br>
+<br><center><img border="0" src="../picture/keyboard.png" alt="keyboard"></center>
+</li>
+
+<br><li><b>Joystick emulation</b><br>
+Click [Options] button on the right of the menu bar, and select Joysticks...<br> 
+Joysticks are emulated with the keyboard (use preferably the numeric keypad). For each joystick, four keys have to be choosen for directions and one for fire. Process is exactly the same as for keyboard layout. Please note that the same key can be used for both VG5000 keyboard and VG5000 joystick emulation. Make your choice to avoid mix-up when running a program testing both keyboard and joysticks.<br>
+<br><center><img border="0" src="../picture/joysticks.png" alt="joysticks"></center>
+</li>
+
+<br><li><b>Tape loading</b><br>
+Click [k7] button of the menu bar...<br> 
+Tape images (.k7 files in software subfolder) are listed in a clickable menu. Click the file name to load the tape. You can also click [unload] to unload the tape, and [next...] or [back to the beginning] if these lines are displayed. Don't forget to check settings for tape write protection. To make an empty tape, create an empty file in software subfolder, and name it with .k7 extension.<br>
+<br><center><img border="0" src="../picture/software.png" alt="software"></center>
+</li>
+
+</ul>
+
+<h3>VG5000 commands</h3>
+<p>
+Look at '<a href="http://dcvg5k.free.fr/download/vg5000-manuel.zip">Manuel d'utilisation du VG5000</a>' (in French).
+<center><img border="0" src="../picture/vg5000manuel.png" alt="manuel vg5000"></center>
+</p>
+<h3>VG5000 game and program commands</h3>
+<p>
+Download user guides from <a href="http://dcvg5k.free.fr/vgsoft/">VG5000 software</a> page.
+</p>
+
+<br>
+<h2>Links</h2>
+<br><ul>
+<li>VG5000 fan's page <a href="http://vg5k.free.fr/"><img src="../icon/vg5kbanner.png" border="0" align="middle" alt="vg5k"></a><br><br>
+<li>My VG5000 by Carl &nbsp; <a href="http://vg5000.free.fr/"><img src="../icon/myvgbanner.png" border="0" align="middle" alt="my vg5000"></a><br><br>
+</ul>
+
+
+</body>
+</html>

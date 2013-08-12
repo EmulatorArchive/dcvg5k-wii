@@ -1,0 +1,158 @@
+ (voir traduction française à la suite de la version anglaise)
+
+                       DCVG5K v2 LICENSE
+                  Version 1 - 9 January 2008
+
+ Copyright (C) 2008 Daniel Coulom - danielcoulom@gmail.com
+ Everyone is permitted to copy and distribute verbatim copies
+ of this license document, but changing it is not allowed.
+
+
+
+ 1) DCVG5K v2
+ ------------
+
+ DCVG5K v2 is free software : you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+ 
+ DCVG5K v2 is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with DCVG5K v2. If not, see http://www.gnu.org/licenses/
+ DCVG5K v2 source is available from http://dcvg5k.free.fr/ 
+
+
+
+ 2) SDL & SDL_ttf libraries
+ --------------------------
+
+ DCVG5K v2 uses Simple DirectMedia Layer (SDL) and SDL_ttf libraries.
+ The Simple DirectMedia Layer library and the SDL_ttf library are
+ currently available under the GNU Lesser General Public License
+ (LGPL) version 2.1 or newer. http://www.gnu.org/copyleft/lesser.html
+ The source is available from the libraries page at the SDL website:
+ http://www.libsdl.org/ 
+
+
+
+ 3) Z80 microprocessor emulator
+ ------------------------------
+
+ DCVG5K v2 uses the Z80 portable emulator by Marat Fayzullin.
+ This emulator is available under its own license and is not
+ included in DCVG5K project. Sources, documentation and license are
+ available from Marat Fayzullin's home page http://fms.komkon.org/ 
+
+
+
+ 4) Vera true type font
+ ----------------------
+
+ DCVG5K v2 uses Bitstream Vera Fonts : http://www.gnome.org/fonts/
+ Copyright (c) 2003 by Bitstream, Inc. All Rights Reserved.
+ Bitstream Vera is a trademark of Bitstream, Inc. 
+ Please read vera-copyright.txt for details.
+
+
+
+ 5) VG5000 ROM
+ ------------- 
+
+ VG5000 ROM is a copyrighted material. If you intend to use it, you
+ must locate the copyright owners and ask them a written permission.
+
+
+
+ 6) VG5000 software
+ ------------------ 
+
+ Most VG5000 commercial programs are copyrighted materials.
+ If you intend to use them, you must locate the author and the
+ publisher and ask them a written permission.
+
+
+____________________________________________________________________________
+                  (official French translation)
+
+                      LICENCE de DCVG5K v2
+                   Version 1 - 9 Janvier 2008
+
+ Copyright (C) 2008 Daniel Coulom - danielcoulom@gmail.com
+ Chacun est autorise a copier et distribuer des copies conformes de
+ ce document de licence, mais toute modification en est proscrite.
+
+
+
+ 1) DCVG5K v2
+ ------------
+
+ DCVG5K v2 est un logiciel libre ; vous pouvez le redistribuer ou
+ le modifier suivant les termes de la “GNU General Public License”
+ telle que publiee par la Free Software Foundation : soit la version
+ 3 de cette licence, soit (a votre gre) toute version ulterieure.
+  
+ DCVG5K v2 est distribue dans l’espoir qu’il vous sera utile, mais
+ SANS AUCUNE GARANTIE : sans meme la garantie implicite de
+ COMMERCIALISABILITE ni d’ADEQUATION À UN OBJECTIF PARTICULIER.
+ Consultez la Licence Generale Publique GNU pour plus de details.
+  
+ Vous devriez avoir reçu une copie de la Licence Generale Publique
+ GNU avec DCVG5K v2. Si ce n’est pas le cas, consultez
+ http://www.gnu.org/licenses/
+ Les sources de DCVG5K v2 sont disponibles a http://dcmo5.free.fr/ 
+
+
+
+ 3) Emulateur microprocesseur Z80
+ --------------------------------
+
+ DCVG5K v2 utilise l'emulateur portable Z80 de Marat Fayzullin.
+ Cet emulateur a une licence specifique et ne fait pas partie du
+ projet DCVG5K. Les sources, la documentation et la licence sont
+ disponibles sur le site de Marat Fayzullin's http://fms.komkon.org/ 
+
+
+
+ 3) Bibliotheques SDL & SDL_ttf
+ ------------------------------
+
+ DCVG5K v2 utilise les bibliotheques Simple DirectMedia Layer (SDL)
+ et SDL_ttf. Ces bibliotheques sont actuellement disponibles suivant
+ les termes de la "GNU Lesser General Public License" (LGPL) :
+ soit la version 2.1, soit (a votre gre) toute version ulterieure.
+ http://www.gnu.org/copyleft/lesser.html
+ Les sources sont disponibles a http://www.libsdl.org/ 
+
+
+
+ 4) Police Vera true type
+ ------------------------
+
+ DCVG5K v2 utilise la police de caracteres Vera de Bitstream :
+ http://www.gnome.org/fonts/
+ Copyright (c) 2003 Bitstream, Inc. Tous droits reserves.
+ Bitstream Vera est une marque commerciale de Bitstream, Inc. 
+ Pour plus de details lire le fichier vera-copyright.txt
+
+
+
+ 5) ROM VG5000
+ ------------- 
+
+ La ROM du VG5000 est protegee par un copyright. Si vous voulez
+ l'utiliser, vous devez identifier les proprietaires du copyright et
+ obtenir leur accord par ecrit.
+
+
+
+ 6) Logiciel VG5000
+ ------------------ 
+
+ La plupart des programmes VG5000 commerciaux sont proteges par copyright.
+ Si vous voulez les utiliser, vous devez identifier les proprietaires
+ du copyright et obtenir leur accord par ecrit.
